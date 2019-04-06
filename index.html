@@ -1,0 +1,180 @@
+<html>
+
+<head>
+  <title>Index</title>
+  
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    #header {
+      background-image: url(header.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: black;
+      height: 15%;
+    }
+
+    #midsection {
+      height: 75%;
+      width: 100%;
+      margin: 0; 
+    }
+
+    #htitle {
+    	margin: 0;
+    	padding: 2%;
+    }
+
+    #titlebox{
+    	height: 10%;
+    }
+
+    #sidebar {
+      width: 20%;
+      height: 100%;
+      margin: 0;
+      background-color: #2196f382;
+      overflow-y: scroll;
+      float: left;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    #contentarea {
+      height: 100%;
+      width: 80%;
+      margin: 0;
+      float: left;
+    }
+
+    #contentiframe {
+      width: 100%;
+      height: 90%;
+      margin: 0;
+      border: none;
+    }
+
+    .list-unstyled {
+      padding-left: 0;
+      display: flex;
+      list-style: none;
+    }
+
+    #footer {
+      height: 10%;
+      background-color: grey;
+      text-align: center;
+      margin: 0;
+    }  
+  </style>
+  
+</head>
+
+<body>
+  <section id="header">
+      <div style="text-align: center; padding-top: 1%; color: white">
+      <h1 >Tool Room</h1>
+  </section>
+
+  <section id= "midsection">
+    <section id="sidebar">
+      <div id = "Testing Division">
+        <h3 style="text-align: center;">Testing</h3>
+        <ul>
+          <li><a href="#testing1">Mssql Connection</a></li>
+          <li><a href="#testing2">Tables in Database</a></li>
+          <li><a href="#testing3">Insert in Tables</a></li>
+          <li><a href="#testing4">Query Data</a></li>
+        </ul>
+      </div>
+      <div id = "Visitor Division">
+        <h3 style="text-align: center;">Visitor</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+        </ul>
+      </div>
+      <div id = "Admin Division">
+        <h3 style="text-align: center;">Admin</h3>
+        <ul>
+          <li><a href="#admin1">Admin1</a></li>
+        </ul>
+      </div>
+      <div id = "User Division">
+        <h3 style="text-align: center;">User</h3>
+        <ul>
+          <li><a href="#user1">User1</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contentarea">
+      <div id="titlebox">
+        <h1 id = "htitle">Hello</h1>
+        </div>
+          <iframe id="contentiframe" src="pvt/screen1.php" name="pageframe"></iframe>
+    </section>
+  </section>
+
+  <section id="footer">
+    Web Programming @ FAST-NU
+  </section>
+
+  <script>
+
+    function f1() {
+
+      var x = location.hash;
+      console.log(x);
+      if (x == "#home") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/screen1.php");
+      }
+      else if(x=="#login"){
+        document.getElementById("contentiframe").setAttribute('src', "pvt/login.php");
+      }
+      else if(x=="#signup"){
+        document.getElementById("contentiframe").setAttribute('src', "pvt/screen3.php");
+      }
+      else  if (x == "#testing1") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/connection.php");
+      }
+      else  if (x == "#testing2") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/tables.php");
+      }
+      else  if (x == "#testing3") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/insertTables.php");
+      }
+      else  if (x == "#testing4") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/queryTables.php");
+      }
+      else if (x == "#admin1") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/screen9.php");
+      }
+      else if (x == "#user1") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/screen16.php");
+      }
+
+    }
+
+    function f2() {
+    	document.getElementById("htitle").innerHTML = document.getElementById("contentiframe").contentDocument.title;
+    }    
+    window.addEventListener("load", f1);
+    window.addEventListener("hashchange", f1);
+    document.getElementById("contentiframe").onload = f2;
+    
+  </script>
+
+</body>
+</html>
