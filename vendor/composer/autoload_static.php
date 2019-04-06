@@ -22,6 +22,7 @@ class ComposerStaticInitd934fe7dd790ee540eb42484d97d4961
 
     public static $classMap = array (
         'inventory\\AccountDB' => __DIR__ . '/../..' . '/app/AccountDB.php',
+        'inventory\\BlobDB' => __DIR__ . '/../..' . '/app/BlobDB.php',
         'inventory\\Connection' => __DIR__ . '/../..' . '/app/Connection.php',
         'inventory\\PostgreSQLCreateTable' => __DIR__ . '/../..' . '/app/PostgreSQLCreateTable.php',
         'inventory\\PostgreSQLPHPInsert' => __DIR__ . '/../..' . '/app/PostgreSQLPHPInsert.php',

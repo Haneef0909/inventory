@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'inventory\\AccountDB' => $baseDir . '/app/AccountDB.php',
+    'inventory\\BlobDB' => $baseDir . '/app/BlobDB.php',
     'inventory\\Connection' => $baseDir . '/app/Connection.php',
     'inventory\\PostgreSQLCreateTable' => $baseDir . '/app/PostgreSQLCreateTable.php',
     'inventory\\PostgreSQLPHPInsert' => $baseDir . '/app/PostgreSQLPHPInsert.php',
