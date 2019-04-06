@@ -20,6 +20,7 @@ try {
     echo 'The new accounts have been added.' . '<br>';
     // 
     $accountDB->addAccount('Susan', 'Wilson', 99, date('Y-m-d'));
+    
 } catch (\PDOException $e) {
     echo $e->getMessage();
 }

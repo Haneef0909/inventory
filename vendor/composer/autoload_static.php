@@ -21,10 +21,12 @@ class ComposerStaticInitd934fe7dd790ee540eb42484d97d4961
     );
 
     public static $classMap = array (
+        'inventory\\AccountDB' => __DIR__ . '/../..' . '/app/AccountDB.php',
         'inventory\\Connection' => __DIR__ . '/../..' . '/app/Connection.php',
         'inventory\\PostgreSQLCreateTable' => __DIR__ . '/../..' . '/app/PostgreSQLCreateTable.php',
         'inventory\\PostgreSQLPHPInsert' => __DIR__ . '/../..' . '/app/PostgreSQLPHPInsert.php',
         'inventory\\StockDB' => __DIR__ . '/../..' . '/app/StockDB.php',
+        'inventory\\StoreProc' => __DIR__ . '/../..' . '/app/StoreProc.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

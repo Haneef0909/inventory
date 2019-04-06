@@ -5,7 +5,7 @@ namespace inventory;
 /**
  * Query Data from table
  */
-class StockDB {
+class AccountDB {
 
     /**
      * PDA Object
@@ -83,5 +83,5 @@ class StockDB {
                     ':plan_id' => $planId,
                     ':effective_date' => $effectiveDate,
         ]);
-    }
+    }   
 }

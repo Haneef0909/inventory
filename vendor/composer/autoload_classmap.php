@@ -6,8 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'inventory\\AccountDB' => $baseDir . '/app/AccountDB.php',
     'inventory\\Connection' => $baseDir . '/app/Connection.php',
     'inventory\\PostgreSQLCreateTable' => $baseDir . '/app/PostgreSQLCreateTable.php',
     'inventory\\PostgreSQLPHPInsert' => $baseDir . '/app/PostgreSQLPHPInsert.php',
     'inventory\\StockDB' => $baseDir . '/app/StockDB.php',
+    'inventory\\StoreProc' => $baseDir . '/app/StoreProc.php',
 );

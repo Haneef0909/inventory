@@ -45,7 +45,7 @@ class StockDB {
      * @return a stock object
      */
     public function findByPK($id) {
-        // prepare SELECT statement
+       // prepare SELECT statement
         $stmt = $this->pdo->prepare('SELECT user_id, email, password
                                        FROM customer
                                       WHERE user_id = :id');
@@ -56,7 +56,7 @@ class StockDB {
         $stmt->execute();
  
         // return the result set as an object
-        return $stmt->fetchObject();
+        return $stmt->fetchObject(); 
     }
 }
 ?>
