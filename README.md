@@ -1,2 +1,2 @@
 # inventory
-This is a discription.
+This is a description.
