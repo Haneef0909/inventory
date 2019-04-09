@@ -111,13 +111,22 @@
       <div id = "Admin Division">
         <h3 style="text-align: center;">Admin</h3>
         <ul>
-          <li><a href="#admin1">Admin1</a></li>
+          <li><a href="#adminPanel">Admin Panel</a></li>
+          <li><a href="#toolRoom">Tool Room</a></li>
         </ul>
       </div>
       <div id = "User Division">
         <h3 style="text-align: center;">User</h3>
         <ul>
           <li><a href="#user1">User1</a></li>
+          <li><a href="#itemHistory">Item History</a></li>
+          <li><a href="#orderTool">Order Tool</a></li>
+          <li><a href="#issuedTool">Issued Tool</a></li>
+          <li><a href="#returnTool">Return Tool</a></li>
+          <li><a href="#requestTool">Request Tool</a></li>
+          <li><a href="#addPurchase">add Purchase</a></li>
+          <li><a href="#addItem">Add Item</a></li>
+          <li><a href="#userAccountRequest">User Account Request</a></li>
         </ul>
       </div>
     </section>
@@ -141,13 +150,13 @@
       var x = location.hash;
       console.log(x);
       if (x == "#home") {
-        document.getElementById("contentiframe").setAttribute('src', "pvt/screen1.php");
+        document.getElementById("contentiframe").setAttribute('src', "pvt/homePage.php");
       }
       else if(x=="#login"){
         document.getElementById("contentiframe").setAttribute('src', "pvt/login.php");
       }
       else if(x=="#signup"){
-        document.getElementById("contentiframe").setAttribute('src', "pvt/screen3.php");
+        document.getElementById("contentiframe").setAttribute('src', "pvt/signup.php");
       }
       else  if (x == "#testing1") {
         document.getElementById("contentiframe").setAttribute('src', "pvt/connection.php");
@@ -170,11 +179,38 @@
       else  if (x == "#testing7") {
         document.getElementById("contentiframe").setAttribute('src', "pvt/blob.php");
       }
-      else if (x == "#admin1") {
-        document.getElementById("contentiframe").setAttribute('src', "pvt/screen9.php");
+      else if (x == "#adminPanel") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/adminPanel.php");
+      }
+      else if (x == "#toolRoom") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/toolRoom.php");
       }
       else if (x == "#user1") {
         document.getElementById("contentiframe").setAttribute('src', "pvt/screen16.php");
+      }
+      else if (x == "#itemHistory") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/itemHistory.php");
+      }
+      else if (x == "#orderTool") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/orderTool.php");
+      }
+      else if (x == "#issuedTool") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/issuedTool.php");
+      }
+      else if (x == "#returnTool") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/returnTool.php");
+      }
+      else if (x == "#requestTool") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/requestTool.php");
+      }
+      else if (x == "#addPurchase") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/addPurchase.php");
+      }
+      else if (x == "#addItem") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/addItem.php");
+      }
+      else if (x == "#userAccountRequest") {
+        document.getElementById("contentiframe").setAttribute('src', "pvt/userAccountRequest.php");
       }
 
     }
